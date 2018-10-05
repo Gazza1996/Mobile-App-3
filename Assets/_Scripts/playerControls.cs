@@ -18,6 +18,12 @@ public class playerControls : MonoBehaviour {
     Animator myAnim;
     bool facingRight;
 
+    // shooting
+    public Transform gunTip;
+    public GameObject bullet;
+    float fireRate = 0.5f;
+    float nextFire = 0f;
+
 	// Use this for initialization
 	void Start () {
         RB = GetComponent<Rigidbody2D>();
@@ -35,6 +41,9 @@ public class playerControls : MonoBehaviour {
             myAnim.SetBool("grounded", grounded);
             RB.AddForce(new Vector2(0, jumpH));
         }
+
+        // player shoot
+        if (Input.GetAxisRaw("Fire1") > 0) fireGun();
     }
 
 	void FixedUpdate () {
@@ -65,5 +74,23 @@ public class playerControls : MonoBehaviour {
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    void fireGun()
+    {
+        if(Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            if (facingRight)
+            {
+                Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 0)));
+            }
+            else if (!facingRight)
+            {
+                Instantiate(bullet, gunTip.position, Quaternion.Euler(new Vector3(0, 0, 180f)));
+
+
+            }
+        }
     }
 }
