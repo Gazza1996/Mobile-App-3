@@ -13,7 +13,10 @@ public class projectileController : MonoBehaviour {
     {
         RB = GetComponent<Rigidbody2D>();
 
-        RB.AddForce(new Vector2(1, 0) * missileSpeed, ForceMode2D.Impulse);
+        if(transform.localRotation.z>0)
+            RB.AddForce(new Vector2(-1, 0) * missileSpeed, ForceMode2D.Impulse);
+        else   RB.AddForce(new Vector2(1, 0) * missileSpeed, ForceMode2D.Impulse);
+
     }
 
     // Update is called once per frame
