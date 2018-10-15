@@ -56,11 +56,12 @@
      <Compile Include="Assets\_Scripts\bulletHit.cs" />
      <Compile Include="Assets\_Scripts\cameraFollow.cs" />
      <Compile Include="Assets\_Scripts\Destroy.cs" />
+     <Compile Include="Assets\_Scripts\enemyDamage.cs" />
      <Compile Include="Assets\_Scripts\enemyHealth.cs" />
+     <Compile Include="Assets\_Scripts\enemyMovement.cs" />
      <Compile Include="Assets\_Scripts\playerControls.cs" />
+     <Compile Include="Assets\_Scripts\playerHealth.cs" />
      <Compile Include="Assets\_Scripts\projectileController.cs" />
-     <Compile Include="Assets\enemyDamage.cs" />
-     <Compile Include="Assets\playerHealth.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Gary Mannion/Documents/_Tembak/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
