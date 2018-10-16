@@ -23,7 +23,7 @@ public class enemyMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        enemyAnimator = GetComponentInChildren<enemyAnimator>();
+        enemyAnimator = GetComponentInChildren<Animator>();
         enemyRB = GetComponent<Rigidbody2D>();
 	}
 	
@@ -67,12 +67,23 @@ public class enemyMovement : MonoBehaviour {
         }
     }
 
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            canFlip = true;
+            charging = false;
+            enemyRB.velocity = new Vector2(0f, 0f);
+            enemyAnimator.SetBool("isCharging", charging);
+        }
+    }
+
     void flipFacing()
     {
         if (!canFlip) return;
         float facingX = enemyGraphic.transform.localScale.x;
         facingX *= -1f;
-        enemyGraphic.transform.localScale.x = new Vector3(facingX, enemyGraphic.transform.localScale.y, enemyGraphic.transform.localScale.z);
+        enemyGraphic.transform.localScale = new Vector3(facingX, enemyGraphic.transform.localScale.y, enemyGraphic.transform.localScale.z);
         facingRight = !facingRight;
     }
 }
