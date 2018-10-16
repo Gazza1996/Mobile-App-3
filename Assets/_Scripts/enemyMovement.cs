@@ -61,7 +61,7 @@ public class enemyMovement : MonoBehaviour {
             if (startChargeTime >= Time.time)
             {
                 if (!facingRight) enemyRB.AddForce(new Vector2(-1, 0) * enemySpeed);
-                else enemyRB.AddForce(new Vector2(-1, 0) * enemySpeed);
+                else enemyRB.AddForce(new Vector2(1, 0) * enemySpeed);
                 enemyAnimator.SetBool("isCharging", charging);
             }
         }

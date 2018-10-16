@@ -257,6 +257,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -432,6 +433,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baea68c263f54e43945d2400519b196, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &547300895
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4103829161577746, guid: 5ae20e9da00a8184b9818f7928c4443b, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.089986324
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 4103829161577746, guid: 5ae20e9da00a8184b9818f7928c4443b, type: 2}
       propertyPath: m_LocalPosition.z
@@ -875,6 +887,16 @@ Prefab:
     - target: {fileID: 4103829161577746, guid: 5ae20e9da00a8184b9818f7928c4443b, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 61750513314634180, guid: 5ae20e9da00a8184b9818f7928c4443b,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 61750513314634180, guid: 5ae20e9da00a8184b9818f7928c4443b,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 7.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ae20e9da00a8184b9818f7928c4443b, type: 2}
@@ -967,9 +989,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcedb85918a48cb4882ff6df6019cb7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemySpeed: 6
+  enemySpeed: 12
   enemyGraphic: {fileID: 1673229783}
-  chargeTime: 1
+  chargeTime: 0.5
 --- !u!1 &1411405833
 GameObject:
   m_ObjectHideFlags: 0

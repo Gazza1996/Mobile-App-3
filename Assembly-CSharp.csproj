@@ -59,6 +59,7 @@
      <Compile Include="Assets\_Scripts\enemyDamage.cs" />
      <Compile Include="Assets\_Scripts\enemyHealth.cs" />
      <Compile Include="Assets\_Scripts\enemyMovement.cs" />
+     <Compile Include="Assets\_Scripts\falling.cs" />
      <Compile Include="Assets\_Scripts\playerControls.cs" />
      <Compile Include="Assets\_Scripts\playerHealth.cs" />
      <Compile Include="Assets\_Scripts\projectileController.cs" />
