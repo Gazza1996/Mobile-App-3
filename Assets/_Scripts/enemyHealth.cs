@@ -8,6 +8,9 @@ public class enemyHealth : MonoBehaviour {
 
     float chealth; // enemys current health state
 
+    public bool drop;
+    public GameObject theDrop;
+
 	// Use this for initialization
 	void Start () {
         chealth = enemeyHealthMax;
@@ -27,5 +30,6 @@ public class enemyHealth : MonoBehaviour {
     void makeDead()
     {
         Destroy(gameObject);
+        if (drop) Instantiate(theDrop, transform.position, transform.rotation);
     }
 }

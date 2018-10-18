@@ -64,6 +64,13 @@ public class playerHealth : MonoBehaviour {
         }
     }
 
+    public void addHealth(float health)
+    {
+        cHealth += health;
+        if (cHealth > fullHealth) cHealth = fullHealth;
+        healthBar.value = cHealth;
+    }
+
     public void makeDead()
     {
         Instantiate(death, transform.position, transform.rotation);

@@ -196,6 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemeyHealthMax: 40
+  drop: 1
+  theDrop: {fileID: 1217080243899392, guid: 0c88c84ff7b3e68428bb162aa115811a, type: 2}
 --- !u!114 &114686185589602286
 MonoBehaviour:
   m_ObjectHideFlags: 1

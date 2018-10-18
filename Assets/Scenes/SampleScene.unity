@@ -159,6 +159,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemeyHealthMax: 20
+  drop: 0
+  theDrop: {fileID: 0}
 --- !u!114 &15824832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,6 +540,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemeyHealthMax: 20
+  drop: 0
+  theDrop: {fileID: 0}
 --- !u!61 &349700081
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1651,6 +1655,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemeyHealthMax: 20
+  drop: 0
+  theDrop: {fileID: 0}
 --- !u!114 &1183380959
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2839,6 +2845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemeyHealthMax: 20
+  drop: 0
+  theDrop: {fileID: 0}
 --- !u!114 &1857823965
 MonoBehaviour:
   m_ObjectHideFlags: 0
