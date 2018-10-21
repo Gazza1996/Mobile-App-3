@@ -22,11 +22,7 @@ public class MainMenu : MonoBehaviour {
 
     /*public void Difficulty()
     {
-
-    }
-
-    public void Instructions()
-    {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }*/
+
 }
