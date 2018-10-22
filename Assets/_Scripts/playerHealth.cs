@@ -8,6 +8,8 @@ public class playerHealth : MonoBehaviour {
     public float fullHealth;
     public GameObject death;
 
+    public restart gameManager;
+
     float cHealth;
 
     playerControls controlMovement;
@@ -15,6 +17,7 @@ public class playerHealth : MonoBehaviour {
     // HUD var
     public Slider healthBar;
     public Image damageScreen;
+    public Text gameOver;
 
     bool damaged = false;
 
@@ -75,5 +78,11 @@ public class playerHealth : MonoBehaviour {
     {
         Instantiate(death, transform.position, transform.rotation);
         Destroy(gameObject);
+        damageScreen.color = flash;
+
+        Animator gameOverAnimator = gameOver.GetComponent<Animator>();
+        gameOverAnimator.SetTrigger("gameOver");
+
+        gameManager.restartGame();
     }
 }
