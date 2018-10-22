@@ -18,6 +18,7 @@ public class playerHealth : MonoBehaviour {
     public Slider healthBar;
     public Image damageScreen;
     public Text gameOver;
+    public Text winGameTxt;
 
     bool damaged = false;
 
@@ -84,5 +85,16 @@ public class playerHealth : MonoBehaviour {
         gameOverAnimator.SetTrigger("gameOver");
 
         gameManager.restartGame();
+    }
+
+    public void gameWin()
+    {
+        Destroy(gameObject);
+        gameManager.restartGame();
+
+        Animator winGameAnimator = winGameTxt.GetComponent<Animator>();
+        winGameAnimator.SetTrigger("gameOver");
+
+
     }
 }
