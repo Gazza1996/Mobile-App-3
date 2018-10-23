@@ -9,12 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 1baa51d5fce7c44468d502f5ca56f2aa
   - enabled: 1
-    path: Assets/Scenes/Easy.unity
-    guid: 3eae79a9a0ef3014eb3defe70574e9ab
+    path: Assets/Scenes/Medium.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Difficulty.unity
     guid: 4f53428947c51a241a7ec0846b9b27c5
   - enabled: 1
-    path: Assets/Scenes/Medium.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Easy.unity
+    guid: 3eae79a9a0ef3014eb3defe70574e9ab
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: 78ce04fe1d4b48b489e3ebe3ba8e03b6
   m_configObjects: {}

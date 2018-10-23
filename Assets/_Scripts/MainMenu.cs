@@ -30,4 +30,14 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene("Easy");
     }
 
+    public void Medium()
+    {
+        SceneManager.LoadScene("Medium");
+    }
+
+    public void Hard()
+    {
+        SceneManager.LoadScene("Hard");
+    }
+
 }
