@@ -20,13 +20,14 @@ public class MainMenu : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    /*public void Difficulty()
+    public void Difficulty()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
-    public void Instructions()
+    public void Easy()
     {
+        SceneManager.LoadScene("Easy");
+    }
 
-    }*/
 }
