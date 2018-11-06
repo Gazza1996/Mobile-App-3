@@ -903,7 +903,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0, y: -63.4}
-  m_SizeDelta: {x: 350.3, y: 199.2}
+  m_SizeDelta: {x: 368.6, y: 222.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1116962971
 MonoBehaviour:
@@ -957,7 +957,9 @@ MonoBehaviour:
     or the WASD keys on your keyboard. The space bar will enable the player to jump
     and clicking the the mouse will shoot the gun to kill an enemy. If you wish to
     change the difficulty of the game you can return to the main menu by pressing
-    ESC to pause and enter difficulty and choose from the options."
+    ESC to pause and enter difficulty and choose from the options. If you wish to
+    post to your facebook about this game you can pause the game and press the share
+    button to do so."
 --- !u!222 &1116962973
 CanvasRenderer:
   m_ObjectHideFlags: 0
