@@ -68,6 +68,7 @@
      <Compile Include="Assets\_Scripts\playerHealth.cs" />
      <Compile Include="Assets\_Scripts\projectileController.cs" />
      <Compile Include="Assets\_Scripts\restart.cs" />
+     <Compile Include="Assets\_Scripts\share.cs" />
      <Compile Include="Assets\_Scripts\winGame.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/Users/Gary Mannion/Documents/_Tembak/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
